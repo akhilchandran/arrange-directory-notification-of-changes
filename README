@@ -1,12 +1,18 @@
 -------------------------------------------------------------------------------------------------------------------------------------
 arrange
 -------------------------------------------------------------------------------------------------------------------------------------
-arrange directory contain a c file for arrange file with there format(pdf, jpg, png and mp4 are handled).
+This directory contains a c file for arrange file with there format(pdf, jpg, png and mp4 are handled).
 
-for compile - from shell change in to the directory arrange and run make file by just typing make and enter.
-for use arrange program run ./arrange [argument1] [argument2]
-argument1 :is  the directory for arrange files from this folder.
-argument2 :is optional and if provide it will set as destination directory else it will be arrange in separate folders in argument1.
+Compile: Change in to the directory "arrange" and run make.
+
+Usage:
+
+     ./arrange [argument1] [opt-argument2]
+
+argument1 :is  the source directory containing all the pdf/jpg/mp4 files. Destination folders are automatically created
+under the same directory.
+
+argument2 :is optional and if provided, the  destination folders will be automatically created under it.
 
 
 
@@ -14,8 +20,16 @@ argument2 :is optional and if provide it will set as destination directory else 
 -------------------------------------------------------------------------------------------------------------------------------------
 notify
 -------------------------------------------------------------------------------------------------------------------------------------
-notify directory contain a c file for monitor a directory for creation deletion and modification of files in that direcory.
+Note: I have only started experimenting with this! Need to integrate "arrange" with this.
 
-for compile - from shell change in to the directory notify and run the command by just typing  cc inotify.c -o notify and enter.
-for use notify program from shell just run ./notify [argument1]
+"notify" directory contains a C file for monitoring a directory for creation/deletion/modification of files.
+
+Compile: - Change into the directory "notify" and run the command by just typing  
+
+   cc inotify.c -o notify and enter.
+
+Usage:  
+
+   ./notify [argument1]
+
 argument1 : is the directory to monitor.
