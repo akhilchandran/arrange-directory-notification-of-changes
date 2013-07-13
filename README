@@ -1,8 +1,8 @@
--------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
 arrange
--------------------------------------------------------------------------------------------------------------------------------------
-This directory contains a c file for copying files to different destination
-folders depending on their type(pdf, jpg, png and mp4 are handled).
+-----------------------------------------------------------------------------------------------------------
+This directory contains a c file for copying files to different destination folders depending on their
+type(pdf, jpg, png and mp4 are handled).
 
 Compile: Change in to the directory "arrange" and run make.
 
@@ -10,17 +10,17 @@ Usage:
 
      ./arrange [argument1] [opt-argument2]
 
-argument1 :is  the source directory containing all the pdf/jpg/mp4 files. Destination folders are automatically created
-under the same directory.
+argument1 :is  the source directory containing all the pdf/jpg/mp4 files. Destination folders are
+automatically created under the same directory.
 
 argument2 :is optional and if provided, the  destination folders will be automatically created under it.
 
 
 
 
--------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
 notify
--------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
 Note: I have only started experimenting with this! Need to integrate "arrange" with this.
 
 "notify" directory contains a C file for monitoring a directory for creation/deletion/modification of files.
@@ -34,3 +34,24 @@ Usage:
    ./notify [argument1]
 
 argument1 : is the directory to monitor.
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
+final
+--------------------------------------------------------------------------------------------------------------
+This directory contains a c file for monitoring directory for changes and copying file to different 
+destination folders depending on their type(pdf, jpg, png and mp4 are handled).
+
+Compile: Change in to the directory "final" and run make.
+
+Usage:
+
+     ./monitor [argument1] [opt-argument2]
+
+argument1 :is  the source directory which is monitoring and all the pdf/png/jpg/mp4 files to this is copied
+to Destination folders which is automatically created under the same directory.
+
+argument2 :is optional and if provided, the  destination folders will be automatically created under it.
+
